@@ -47,7 +47,7 @@ document.addEventListener("keydown", (event) => {
     }
 
     else if(event.key === "Backspace"){
-        display.value = display.value.slice(0, -1);
+        display.value = display.value.slice(0,-1);
     }
 
     else if(event.key === "Escape"){
