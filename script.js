@@ -11,6 +11,10 @@ buttons.forEach(button => {
             display.value = "";
         }
 
+        else if(value === "⌫"){
+            display.value = display.value.slice(0, -1);
+        }
+
         else if(value === "="){
             try{
                 display.value = eval(display.value);
@@ -29,7 +33,7 @@ buttons.forEach(button => {
 
 document.addEventListener("keydown", (event) => {
 
-    if("0123456789+-*/.".includes(event.key)){
+    if("0123456789+-*/.%".includes(event.key)){
         display.value += event.key;
     }
 
@@ -43,7 +47,7 @@ document.addEventListener("keydown", (event) => {
     }
 
     else if(event.key === "Backspace"){
-        display.value = display.value.slice(0,-1);
+        display.value = display.value.slice(0, -1);
     }
 
     else if(event.key === "Escape"){
