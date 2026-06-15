@@ -39,7 +39,7 @@ body{
 }
 
 button{
-    padding:20px;
+    height:60px;
     font-size:20px;
     border:none;
     border-radius:8px;
@@ -56,7 +56,11 @@ button:hover{
     background:red;
 }
 
+.backspace{
+    background:#ff9800;
+}
+
 .equal{
-    grid-column:span 4;
     background:orange;
+    grid-column:span 2;
 }
